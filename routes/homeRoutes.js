@@ -12,9 +12,9 @@ router.get("/notes", async (req,res) => {
     res.sendFile(path.join(__dirname, '../public/notes.html'))
 })
 
-// router.post("*", async (req,res) => {
-//     res.sendFile(path.join(__dirname, '../public/index.html'))
-// })
+router.post("*", async (req,res) => {
+    res.sendFile(path.join(__dirname, '../public/index.html'))
+})
 
 
 module.exports = router;
